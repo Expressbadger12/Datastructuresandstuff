@@ -1,0 +1,3 @@
+﻿  stack.cpp
+C:\Users\FSTEWART86142\source\repos\stack\stack\stack.cpp(52,1): warning C4715: 'Stack::peek': not all control paths return a value
+  stack.vcxproj -> C:\Users\FSTEWART86142\source\repos\stack\x64\Debug\stack.exe
