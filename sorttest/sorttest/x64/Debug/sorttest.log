@@ -1,0 +1,12 @@
+﻿  sorttest.cpp
+C:\Users\fboon\source\repos\sorttest\sorttest\sorttest.cpp(99,21): warning C4244: 'initializing': conversion from '_Rep' to 'float', possible loss of data
+C:\Users\fboon\source\repos\sorttest\sorttest\sorttest.cpp(99,21): warning C4244:         with
+C:\Users\fboon\source\repos\sorttest\sorttest\sorttest.cpp(99,21): warning C4244:         [
+C:\Users\fboon\source\repos\sorttest\sorttest\sorttest.cpp(99,21): warning C4244:             _Rep=__int64
+C:\Users\fboon\source\repos\sorttest\sorttest\sorttest.cpp(99,21): warning C4244:         ]
+C:\Users\fboon\source\repos\sorttest\sorttest\sorttest.cpp(107,21): warning C4244: 'initializing': conversion from '_Rep' to 'float', possible loss of data
+C:\Users\fboon\source\repos\sorttest\sorttest\sorttest.cpp(107,21): warning C4244:         with
+C:\Users\fboon\source\repos\sorttest\sorttest\sorttest.cpp(107,21): warning C4244:         [
+C:\Users\fboon\source\repos\sorttest\sorttest\sorttest.cpp(107,21): warning C4244:             _Rep=__int64
+C:\Users\fboon\source\repos\sorttest\sorttest\sorttest.cpp(107,21): warning C4244:         ]
+  sorttest.vcxproj -> C:\Users\fboon\source\repos\sorttest\x64\Debug\sorttest.exe
