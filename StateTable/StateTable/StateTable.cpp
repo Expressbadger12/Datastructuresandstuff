@@ -6,13 +6,19 @@
 #include <iostream>
 #include <string>
 #include <list>
+#include <chrono>
+
 using namespace std;
+using namespace std::chrono;
+
 
 struct HashNode {
     string key;
-    int value;
-    HashNode(string k, int v) : key(k), value(v) {}
+    string value;
+    HashNode(string k, string v) : key(k), value(v) {}
 };
+
+//key cannot be same (in this case name) value can be same (in this case state)
 //class HashTable
 class HashTable {
 private:
@@ -35,7 +41,7 @@ public:
         delete[] table; // free memory for table
     }
     //instert key-value pair
-    void insert(const string& key, int value) {
+    void insert(const string& key, string value) {
         int index = hashFunction(key);
         //check if key already exists: update value
         //auto: let the compiler deduce the type (hashnode)
@@ -51,7 +57,7 @@ public:
 
     }
     //retreive value by key; returns true if found
-    bool retrieve(const string& key, int& value) {
+    bool retrieve(const string& key, string& value) {
         int index = hashFunction(key);
         for (auto& node : table[index]) {
             if (node.key == key) {
@@ -80,7 +86,7 @@ public:
     }
 };
 
-string generate() {
+string generateName() {
     string name;
     for (int i = 0; i < 4; i++) {
         int rasm = rand();
@@ -90,48 +96,85 @@ string generate() {
     return name;
 }
 
-void makelist(HashTable) {
-    for (int i = 0; i < 1000; i++) {
-
-    }
-}
-
 string pickState() {
     string states[50] = { "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming" };
     int random = (rand() % 50);
     return states[random];
 }
 
-int main()
-{
-
+void makelist(HashTable& table) {
+    table.insert("Alice", "California");
+    for (int i = 0; i < 999; i++) {
+        table.insert(generateName(), pickState());
+    }
 }
 
-//void old() {
-//    HashTable hashTable1(13);
-//    //insert elements
-//    hashTable1.insert("Michael", 85);
-//    hashTable1.insert("Maria", 90);
-//    hashTable1.insert("Tony", 70);
-//    hashTable1.insert("Georgeo", 50);
-//    hashTable1.insert("Flayer", 99);
-//
-//    hashTable1.print();
-//
-//    int value;
-//    string key = "Charlie";
-//    if (hashTable1.retrieve(key, value)) {
-//        cout << "\nValue for key: " << key << " is: " << value << endl;
-//    }
-//    else {
-//        cout << "\nValue for Key: " << key << " not found" << endl;
-//    }
-//
-//    string bing = "Maria";
-//    if (hashTable1.retrieve(bing, value)) {
-//        cout << "\nValue for key: " << bing << " is: " << value << endl;
-//    }
-//    else {
-//        cout << "\nValue for Key: " << bing << " not found" << endl;
-//    }
-//}
+
+void doTheThing(int buckets) {
+
+    auto start = high_resolution_clock::now();
+
+    HashTable hashTable1(buckets);
+    makelist(hashTable1);
+
+    auto stop = high_resolution_clock::now();
+
+    auto duration = duration_cast<microseconds>(stop - start);
+
+    cout << "Time it took to generate data and put data in the "<< buckets << " bucket hash table: " << duration.count() << " microseconds" << endl;
+
+    string nothing;
+
+    cin >> nothing;
+   
+    auto start2 = high_resolution_clock::now();
+
+    string key, value;
+
+    key = "Alice";
+    if (hashTable1.retrieve(key, value)) {
+        cout << "Retrieve example" << endl;
+        cout << "\nValue for key: " << key << " is: " << value << endl;
+    }
+
+    auto stop2 = high_resolution_clock::now();
+
+    auto duration2 = duration_cast<microseconds>(stop2 - start2);
+
+    cout << "Time it took to find the given value in a " << buckets << " bucket hash table was " << duration2.count() << " microseconds" << endl;
+ 
+    cout << "Continue to print hashtable" << endl;
+    cin >> nothing;
+    
+    auto start3 = high_resolution_clock::now();
+
+    hashTable1.print();
+
+    auto stop3 = high_resolution_clock::now();
+
+    auto duration3 = duration_cast<microseconds>(stop3 - start3);
+
+    cout << "Time it took to print a " << buckets << " bucket hash table was " << duration3.count() << " microseconds" << endl;
+}
+
+int main()
+{
+    string nothing;
+
+
+    cout << "10 bucket hash table:" << endl;
+    doTheThing(10);
+    cout << endl;
+    cout << "type anything to move on to the 100 bucket hash table:" << endl;
+    cin >> nothing;
+
+    cout << "100 bucket hash table:" << endl;
+    doTheThing(100);
+    cout << endl;
+    cout << "type anything to move on to the 1000 bucket hash table:" << endl;
+    cin >> nothing;
+
+    cout << "1000 bucket hash table:" << endl;
+    doTheThing(1000);
+    cout << endl;
+}
