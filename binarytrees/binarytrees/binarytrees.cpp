@@ -82,20 +82,59 @@ private:
 			node->data = temp->data;
 			node->right = deleteNode(node->right, temp->data);
 		}
+		return node;
 	}
+	//Helper function for inorder traversal
+	void inorderTraversal(Node* node) {
+		if (node == nullptr) return;
+		inorderTraversal(node->left);
+		cout << node->data << " ";
+		inorderTraversal(node->right);
+	}
+public:
+	//constructor
+	BinarySearchTree(): root(nullptr){}
+	//function to insert a value in a BST
+	void insert(int value) {
+		root = insertNode(root, value);
+	}
+	//function to search the value in the bst
+	bool search(int value) {
+		return searchNode(root, value);
+	}
+	//function to delete a value from the BST
+	void remove(int value) {
+		root = deleteNode(root, value);
+	}
+	//Function to display the BST in order
+	void displayInorder() {
+		inorderTraversal(root);
+		cout << endl;
+	}
+
 };
 
 int main()
 {
+	BinarySearchTree bst1;
+	//insert elements
+	bst1.insert(50);
+	bst1.insert(60);
+	bst1.insert(20);
+	bst1.insert(10);
+	bst1.insert(40);
+	bst1.insert(90);
+	cout << "Inorder traversal of the BST: ";
+	bst1.displayInorder();
+	cout << "Search for 40: " << (bst1.search(40) ? "Found" : "Not found") << endl;
+	cout << "Search for 100: " << (bst1.search(100) ? "Found" : "Not found") << endl;
+	//Deleting an element
+	cout << "Delete 20" << endl;
+	bst1.remove(20);
+	cout << "Inorder traversal after deleting (20): ";
+	bst1.displayInorder();
+	cout << "Delete 60" << endl;
+	bst1.remove(60);
+	cout << "Inorder traversal after deleting (60): ";
+	bst1.displayInorder();
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
