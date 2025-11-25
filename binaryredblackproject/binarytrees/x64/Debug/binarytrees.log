@@ -1,0 +1,42 @@
+﻿  binarytrees.cpp
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(338,20): warning C4244: 'initializing': conversion from '_Rep' to 'float', possible loss of data
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(338,20): warning C4244:         with
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(338,20): warning C4244:         [
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(338,20): warning C4244:             _Rep=__int64
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(338,20): warning C4244:         ]
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(349,62): warning C4244: '=': conversion from '_Rep' to 'float', possible loss of data
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(349,62): warning C4244:         with
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(349,62): warning C4244:         [
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(349,62): warning C4244:             _Rep=__int64
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(349,62): warning C4244:         ]
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(360,66): warning C4244: '=': conversion from '_Rep' to 'float', possible loss of data
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(360,66): warning C4244:         with
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(360,66): warning C4244:         [
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(360,66): warning C4244:             _Rep=__int64
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(360,66): warning C4244:         ]
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(371,64): warning C4244: '=': conversion from '_Rep' to 'float', possible loss of data
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(371,64): warning C4244:         with
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(371,64): warning C4244:         [
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(371,64): warning C4244:             _Rep=__int64
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(371,64): warning C4244:         ]
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(388,17): warning C4244: 'initializing': conversion from '_Rep' to 'float', possible loss of data
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(388,17): warning C4244:         with
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(388,17): warning C4244:         [
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(388,17): warning C4244:             _Rep=__int64
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(388,17): warning C4244:         ]
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(399,60): warning C4244: '=': conversion from '_Rep' to 'float', possible loss of data
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(399,60): warning C4244:         with
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(399,60): warning C4244:         [
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(399,60): warning C4244:             _Rep=__int64
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(399,60): warning C4244:         ]
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(410,63): warning C4244: '=': conversion from '_Rep' to 'float', possible loss of data
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(410,63): warning C4244:         with
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(410,63): warning C4244:         [
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(410,63): warning C4244:             _Rep=__int64
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(410,63): warning C4244:         ]
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(421,61): warning C4244: '=': conversion from '_Rep' to 'float', possible loss of data
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(421,61): warning C4244:         with
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(421,61): warning C4244:         [
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(421,61): warning C4244:             _Rep=__int64
+C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\binarytrees\binarytrees.cpp(421,61): warning C4244:         ]
+  binarytrees.vcxproj -> C:\Users\fboon\Downloads\Expressbadger12 Datastructuresandstuff main binarytrees\x64\Debug\binarytrees.exe
